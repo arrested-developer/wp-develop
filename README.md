@@ -1,6 +1,6 @@
 # wp-development
 
-WP development environment using Docker.
+WP development environment using Docker 🐳.
 
 ## Installation
 
