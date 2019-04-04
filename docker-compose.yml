@@ -6,7 +6,9 @@ services:
       - wp_dev_db
     image: wordpress:latest
     volumes:
-      - ./wp-content:/var/www/html/wordpress/wp-content
+    - type: bind
+      source: ./wp-content
+      target: /var/www/html/wp-content
     ports:
       - "4000:80"
     restart: always
